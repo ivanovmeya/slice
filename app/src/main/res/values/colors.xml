@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    //TODO should it be second title color or just light black ?
+    <color name="blackLight">#2E3034</color>
+    <color name="grayLight">#838B97</color>
+
+    <color name="green">#7AB55C</color>
+    <color name="red">#CD4C58</color>
+
+    <color name="bg_white">#F7F7F7</color>
+</resources>
