@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_default"
+        android:textAllCaps="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -29,39 +30,50 @@
         app:layout_constraintTop_toBottomOf="@id/titleView"
         tools:text="Разделите героев сериала" />
 
-    <com.ivanovme.slice.presentation.game.CardSwipeView
-        android:id="@+id/cardSwipeView"
+    <com.ivanovme.slice.presentation.game.deck.DeckView
+        android:id="@+id/deckView"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="0dp"
         android:layout_marginTop="@dimen/margin_default"
-        android:background="@color/grayLight"
         android:clickable="true"
         android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/firstOptionView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/taskView" />
 
-    <ImageButton
+    <TextView
         android:id="@+id/firstOptionView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_default"
-        android:background="?attr/selectableItemBackground"
-        android:src="@drawable/bg_answer_left"
+        android:layout_marginTop="@dimen/margin_default"
+        android:background="@drawable/bg_answer_left"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/secondOptionView"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deckView"
+        tools:text="Игра\n престолов" />
 
-    <ImageButton
+    <TextView
         android:id="@+id/secondOptionView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin_default"
-        android:background="?attr/selectableItemBackground"
-        android:src="@drawable/bg_answer_right"
+        android:background="@drawable/bg_answer_right"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/firstOptionView" />
-
+        app:layout_constraintStart_toEndOf="@id/firstOptionView"
+        tools:text="Властелин\n колец" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

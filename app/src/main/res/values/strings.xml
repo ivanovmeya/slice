@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Slice</string>
+    <string name="game_of_thrones">Игра престолов</string>
+    <string name="lord_of_the_rings">Властелин колец</string>
+    <string name="title">Task</string>
+    <string name="split_characters">Split TV series characters</string>
 </resources>
