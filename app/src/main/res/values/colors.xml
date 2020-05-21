@@ -6,6 +6,7 @@
 
 
     //TODO should it be second title color or just light black ?
+    <color name="black">@android:color/black</color>
     <color name="blackLight">#2E3034</color>
     <color name="grayLight">#838B97</color>
 

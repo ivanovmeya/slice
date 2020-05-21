@@ -4,4 +4,6 @@
     <string name="lord_of_the_rings">Властелин колец</string>
     <string name="title">Task</string>
     <string name="split_characters">Split TV series characters</string>
+    <string name="correct">Correct</string>
+    <string name="wrong">Wrong</string>
 </resources>

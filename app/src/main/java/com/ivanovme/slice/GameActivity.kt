@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
 import com.ivanovme.slice.presentation.game.GameFragment
+import com.ivanovme.slice.presentation.result.GameResultFragment
 
 class GameActivity : AppCompatActivity() {
 
@@ -13,8 +14,12 @@ class GameActivity : AppCompatActivity() {
         setContentView(R.layout.activity_game)
 
         if (savedInstanceState == null) {
+//            supportFragmentManager.beginTransaction()
+//                .replace(R.id.container, GameFragment.newInstance())
+//                .commitNow()
+
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, GameFragment.newInstance())
+                .replace(R.id.container, GameResultFragment.newInstance())
                 .commitNow()
         }
 
